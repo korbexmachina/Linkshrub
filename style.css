@@ -38,14 +38,14 @@ body {
   max-width: 400px;
 }
 
-@media only screen and (max-width: 800px) {
-  .link-list {
-    position: relative;
-  }
-  body {
-    font-size: 10pt;
-  };
-}
+/* @media only screen and (max-width: 800px) { */
+/*   .link-list { */
+/*     position: relative; */
+/*   } */
+/*   body { */
+/*     font-size: 10pt; */
+/*   }; */
+/* } */
 
 .styled-list > a {
   text-decoration: none;
@@ -134,6 +134,11 @@ body {
   }
   .styled-list {
     max-width: 85%;
+    max-height: 100px;
+    font-size: 25pt;
+  }
+  .link-list {
+    height: 200vh;
   }
   .about-container > p {
     font-size: 25px;
