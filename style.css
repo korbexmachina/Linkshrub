@@ -175,11 +175,7 @@ body {
   }
   .styled-list {
     max-width: 85%;
-    max-height: 100px;
     font-size: 32px;
-  }
-  .link-list {
-    height: 200vh;
   }
   .about-container > p {
     font-size: 25px;
