@@ -5,15 +5,19 @@
     <meta charset="utf-8">
     <title>korbexmachina</title>
     <link type="text/css" rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
   </head>
-  <body>
+  <body data-theme="light">
+    <!-- Clickable Toggle Button -->
+    <button id="themeToggle" aria-label="Toggle Theme">
+      <i class="fa-regular fa-moon"></i>
+    </button>
     <div class="flex-container">
       <div class="about">
         <div class="about-container">
           <img src="/images/slug.png" alt="Banana slug">
-          <h1>Korben</h1>
-          <h1>Tompkin</h1>
+          <h1>Korben Tompkin</h1>
           <p>Hi there!</p>
           <p>Here are some links, go ahead and click on one!</p>
           <p>Or don't... it's up to you.</p>
@@ -61,5 +65,6 @@
         </ul>
       </div>
     </div>
+    <script src="theme.js" defer></script>
   </body>
 </html>

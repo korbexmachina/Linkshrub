@@ -1,8 +1,47 @@
+/* Variables */
+:root {
+  --primary: #602ce2;
+  --accent: #daa30b;
+  font-family: "Inter", serif;
+  transition: ease .3s;
+}
+
+/* Light Theme */
+body[data-theme="light"] {
+  --text: #181802;
+  --background: #fafafa;
+  --secondary: #E6E6E5;
+  --toggle: #602ce2;
+}
+
+/* Dark Theme */
+body[data-theme="dark"] {
+  --text: #fdfde7;
+  --background: #050505;
+  --secondary: #1a1a19;
+  --toggle: #daa30b;
+}
+
+/* Toggle Button Styles */
+#themeToggle {
+  /* background-color: var(--secondary); */
+  background: none;
+  color: var(--toggle);
+  position: fixed;
+  right: 1em;
+  align-self: flex-end;
+  border-radius: 20px;
+  padding: 0.5em;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+}
+
 body {
   padding: 0;
   margin: 0;
-  background-color: #1e1e2e;
-  color: #cdd6f4;
+  background-color: var(--background);
+  color: var(--text);
 }
 
 .flex-container {
@@ -49,21 +88,21 @@ body {
 
 .styled-list > a {
   text-decoration: none;
-  color: #f5e0dc;
-
+  color: var(--text);
 }
 
 .styled-list li {
   transition: ease .3s;
+  background-color: var(--secondary);
 }
 
 .styled-list li:hover {
-  color: #cba6f7;
-  border-color: #cba6f7;
+  color: var(--accent);
+  border-color: var(--accent);
 }
 
 .list-item {
-  border: 2px solid #6c7086;
+  border: 2px solid var(--secondary);
   margin: .5em 0;
   text-align: center;
 
@@ -81,7 +120,7 @@ body {
   margin-right: .5em;
   font-size: 22px;
   font-weight: bold;
-  border-right: 2px solid #6c7086;
+  border-right: 2px solid var(--primary);
 }
 
 .link-list-text {
@@ -125,7 +164,9 @@ body {
 .about-container > h1 {
   font-size: 60px;
   font-family: sans-serif;
-  line-height: 28px;
+  background: linear-gradient(120deg, var(--primary), var(--accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 @media only screen and (max-width: 1000px) {
